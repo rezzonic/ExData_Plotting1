@@ -15,7 +15,7 @@ DT <- read.table(f,
                   	f,
                   	nrow = 1, header = TRUE, sep=";")))
 
-png(filename="plot3.png", width=480, height=480)
+png(filename="plot3.png", width=480, height=480, bg='transparent')
 plot(strptime(paste(DT$Date,DT$Time,sep=" "), format=dformat), DT$Sub_metering_1,
 	xlab="", 
 	ylab="Energy sub metering",

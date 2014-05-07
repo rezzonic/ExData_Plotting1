@@ -12,7 +12,7 @@ DT <- read.table(f,
                   	f,
                   	nrow = 1, header = TRUE, sep=";")))
 
-png(filename="plot1.png", width=480, height=480)
+png(filename="plot1.png", width=480, height=480, bg='transparent')
 hist(DT$Global_active_power, 
 	xlab="Global Active Power (kilowatts)", 
 	main="Global Active Power", 

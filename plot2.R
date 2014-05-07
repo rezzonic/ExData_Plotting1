@@ -16,7 +16,7 @@ DT <- read.table(f,
                   	nrow = 1, header = TRUE, sep=";")))
 
 
-png(filename="plot2.png", width=480, height=480)
+png(filename="plot2.png", width=480, height=480, bg='transparent')
 plot(strptime(paste(DT$Date,DT$Time,sep=" "), format=dformat), DT$Global_active_power,
 	xlab="", 
 	ylab="Global Active Power (kilowatts)",
